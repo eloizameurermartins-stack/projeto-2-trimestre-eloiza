@@ -1,16 +1,16 @@
-constㅤbotoesㅤ=document.querySelectorAllㅤ("button");
+const botoes =document.querySelectorAll ("button");
 botoes.forEach(function(botao)){
 
 
-letㅤcurtiu=false;
-    botao.addEventListenerㅤ("click",ㅤbotaoClicado);
-    functionㅤbotaoClicado(){
- console.log("fuiㅤclicado");
-        letㅤtexto=botao.querySeletor("span");
-        if(curtiuㅤ===ㅤfalse){
-            texto.textcontentㅤ++;
-          curtiuㅤ=ㅤtrue;
-            }ㅤelseㅤ{
+let curtiu=false;
+    botao.addEventListener ("click", botaoClicado);
+    function botaoClicado(){
+ console.log("fui clicado");
+        let texto=botao.querySeletor("span");
+        if(curtiu === false){
+            texto.textcontent ++;
+          curtiu = true;
+            } else {
                 texto.textcontent;
                 curtiu=false;
             }
